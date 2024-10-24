@@ -1,0 +1,110 @@
+/* secotion two hero_two.js start */
+/* main box  */
+.herotwo_box{  
+    height:90vh;
+    width:100vw;
+    background-color:rgb(178, 211, 178); 
+    /* margin-top:15vh; */
+    position:sticky;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  
+  /* first heading p  */
+  .herotwo_box #p1{
+    font-size:clamp(1vh,7vw,8vh);
+    font-family:serif;
+    padding-top:2vh;
+    color:tomato;
+    font-weight:bold;
+  }
+  
+  /* second paragraph  */
+  #p2{
+    font-size:clamp(1vh,2vw,3vh);
+    text-align:center;
+    margin-top:3vh;
+    font-weight:bolder;
+    font-family:serif;
+    width:90%;
+    line-height:5vh; 
+    color:darkolivegreen;
+  }
+  
+  
+  
+  /* hidden button */
+  #lastbtn button{          
+      display:none;
+      
+  }
+  
+  
+  @media(max-width:834px){
+    /* main box */
+    .herotwo_box{
+      height:93vh;
+      width:100vw;
+      background-color:rgb(178, 211, 178); 
+      /* margin-top:15vh; */
+      position:sticky;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      
+    }
+  
+    /* first heading p  */
+    .herotwo_box #p1{
+      font-size:clamp(1vh,7vw,8vh);
+      font-family:serif;
+      padding-top:2vh;
+      color:tomato;
+      font-weight:bold;
+    }
+  
+    /* second paragraph */
+    #p2{
+      font-size:clamp(1vh,3vw,4vh);
+      text-align:justify;
+      text-align:center;
+      margin-top:3vh;
+      font-weight:bolder;
+      font-family:serif;
+      width:90%;
+      line-height:5vh; 
+      color:darkolivegreen;
+    }
+  
+    /* image box */
+    .brand-icons{
+      display:flex;
+     gap:3vw;
+    }
+  
+    /* image inside the box */
+    .brand-icons img{
+      height:35vh;
+      width:35vw;  
+     
+    }
+  
+  
+  }
+
+  @media(max-width:500px){
+      /* hidden button */
+      #lastbtn button{
+        margin-top:5vh;
+        padding-top:0;
+        height:7vh;
+        width:50vw;
+        font-size:clamp(0.5vh,6vw,6.5vh);
+        border:none;
+        font-weight:bold;
+        border-radius:20px;
+        background-color:rgb(252, 4, 219);
+        display:block;
+    }
+  }

@@ -1,0 +1,145 @@
+/* For Navigation.js  */
+
+/* Navebar full box  */
+.container{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    font-size:clamp(1vh,3.5vw,4vh);
+    height:10vh;
+    width:100vw;
+    background-color:rgb(70, 39, 39);
+    position:fixed;
+    top:0;
+    z-index: 1000;
+    
+  
+  }
+  
+  /* manu box  */
+  ul{
+    display:flex;    
+    gap:8vw;
+    list-style-type:none; 
+    font-weight:bold; 
+    color:white;
+    font-family:serif;
+  }
+  
+  /* Login button inside the navebar  */
+  /* .container button{
+    all:unset;
+    height:100%;
+    width:100%;
+    font-size:clamp(1vh,3vw,4vh);
+    font-weight:bold;
+    border-radius:10px;
+    border:none;
+    background-color:rgb(252, 4, 219);
+    cursor:pointer;
+    font-family:serif;
+  } */
+
+  /* Link tag */
+  /* .link-button{
+    width:10%;
+    height:70%;
+    text-align:center;
+    text-decoration: none;
+    color:inherit;
+   display:inline-block;    
+  } */
+
+
+  #catlink{
+    text-decoration:none;
+    color:inherit;
+  }
+  #catlink:link{color:white;}
+  #catlink:hover{color:white;}
+  #catlink:active{color:white;}
+  #catlink:Visited{color:white;}
+  
+  /* shoeshop text inside the navbar  */
+  .logo h4{
+    font-family:SHREE-ENG-0393,courier;
+    color:rgb(252, 248, 4);
+    font-size:clamp(1vh,4.5vw,6vh);
+    font-style:italic;
+  }
+  
+  /*  li inside the navbar ul */
+  li{
+    cursor:pointer;
+    text-wrap:wrap;
+  }
+ 
+
+  @media(max-width:834px){
+    /* navbar container */
+    .container{
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+      font-size:clamp(1vh,3.5vw,4vh);
+      height:8vh;
+      width:100vw;
+      position:fixed;
+      top:0;
+      z-index: 1000;
+    
+    
+      /* background-color:rgb(152, 151, 151); */
+    }
+  
+    /* navbar ul manu */
+    ul{
+      display:flex;
+      gap:6vw;
+      list-style-type:none; 
+      font-weight:bold; 
+      color:white;
+      font-family:serif;
+      font-size:clamp(1vh,3vw,4vh);
+      
+    }
+  
+    /* login button in navbar */
+    /* .container button{
+      all:unset;      
+      height:100%;
+      width:100%;
+      font-size:clamp(1vh,3vw,4vh);
+      font-weight:bold;
+      border-radius:10px;
+      border:none;
+      background-color:rgb(252, 4, 219);
+      cursor:pointer;
+    } */
+
+
+
+    /* Link router */
+    /* .link-button{
+      width:10%;
+      height:70%;
+      text-align:center;
+      text-decoration: none;
+      color:inherit;
+     display:inline-block;      
+    } */
+  
+
+
+    /* shoeshop text in navbar */
+    .logo h4{
+      font-family:SHREE-ENG-0393,courier;
+      color:rgb(252, 248, 4);
+      font-size:clamp(1vh,4vw,5vh);
+      word-spacing:-1vw;
+      font-style:italic;
+    }
+  }
+  
+  
+  

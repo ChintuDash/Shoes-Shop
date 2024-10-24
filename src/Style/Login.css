@@ -1,0 +1,115 @@
+.loginbox{
+    height:90vh;
+    width:100vw;    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:10vh;
+}
+
+.loginbox .box{
+    height:70%;
+    width:40%;
+    border:1px solid;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+   background-color:rgb(163, 163, 163);
+   border-radius:20px;
+   border:1px solid black;
+  
+}
+label{
+    font-size:clamp(1vh,5vw,5.5vh);
+    font-weight:bold;
+    color:white;
+    font-family:serif;
+}
+input[type="text"] {
+    width:50%;
+    height:13%;
+    margin-top:5vh;
+    border-radius:15px;
+    font-size:clamp(1vh,3vw,4vh);
+    text-align:center;
+    text-transform:capitalize;
+    border:none;    
+    
+}
+input[type="text"]:focus{
+    width:80%;
+    transition:all 1s;
+
+}
+input[type="submit"] {
+    all:unset;
+    width:50%;
+    height:15%;
+    margin-top:15vh; 
+    border-radius:10px;
+    text-align:center;
+    font-size:clamp(1vh,3vw,4vh);   
+    text-transform:capitalize;
+    background-color:rgb(255, 0, 255);
+    font-weight:bold;
+    color:white;
+    border:none;   
+    cursor:pointer;
+}
+
+
+
+@media(max-width:834px){
+    .loginbox{
+        height:90vh;
+        width:100vw;    
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-top:6vh;
+    }
+    .loginbox .box{
+        height:100%;
+        width:100%;
+        border:1px solid;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+       background-color:rgb(163, 163, 163);      
+       border:1px solid black;
+       border-radius:0;      
+    }
+    label{
+        font-size:clamp(1vh,8vw,9vh);
+        font-weight:bold;
+        color:white;
+        font-family:serif;
+    }
+    input[type="text"] {
+        width:60%;
+        height:10%;
+        margin-top:5vh;
+        border-radius:15px;
+        font-size:clamp(1vh,5vw,4vh);
+        text-align:center;
+        text-transform:capitalize;
+        border:none;            
+    }
+    input[type="submit"] {
+        all:unset;
+        width:50%;
+        height:10%;
+        margin-top:15vh; 
+        border-radius:10px;
+        text-align:center;
+        font-size:clamp(1vh,5vw,6vh);   
+        text-transform:capitalize;
+        background-color:rgb(255, 0, 255);
+        font-weight:bold;
+        color:white;
+        border:none;   
+        cursor:pointer;
+    }
+}
