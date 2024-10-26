@@ -6,10 +6,13 @@
     align-items:center;
     position:relative;
     flex-direction:column;
+    text-align:center;   
 }
+
 .namebox{
     margin-top:15vh;
-    text-align:center;
+    text-align:center;  
+    overflow-x: hidden; 
 }
 .namebox h1{
     font-size:clamp(1vh,6vw,7vh);
@@ -19,23 +22,46 @@
     font-size:clamp(1vh,10vw,11vh);
     text-transform:capitalize;
     font-weight:bold;
-    color:rgb(0, 255, 247);  
-    text-shadow:0 0 30px white;
-    margin-top:5vh;
+    color:blue;  
+    text-shadow:0 0 10px red, 0 0 50px red;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top:5vh;     
 }
-.namebox h3{
-    margin-top:20vh;
+#text h3{
+    margin-top:8vh;
     color:white;
     font-size:clamp(1vh,8vw,9vh);    
 }
-#accounticon{
-    height:12%;
-    width:100%;
+#text marquee{
+    color:white;
+    font-size:clamp(1vh,5vw,6vh);
+    margin-top:5vh;
+}
+#iconbox{
+    height:20%;
+    width:100%;                
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     background-color:white;
-    color:black;
-    font-size:50px;
     position:absolute;
     bottom:0;
+}
+#iconbox h6{
+    color:black;
+    font-size:clamp(1vh,4vw,5vh);
+    margin-bottom:5vh;
+    margin-top:1px;
+}
+
+#accounticon{
+    height:20%;
+    width:100%;    
+    color:black;
+    font-size:clamp(1vh,6vw,7vh);
+    /* position:absolute;
+    bottom:0; */
     display:flex;
     justify-content:center;
     align-items:center;
@@ -52,18 +78,40 @@ a:visited{color:black;}
 
 
 @media(max-width:834px){
+    #iconbox{
+        height:20%;
+        width:100%;            
+        bottom:0;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        background-color:white;
+        position:absolute;
+    }
+    #iconbox h6{
+        color:black;
+        font-size:clamp(1vh,4vw,5vh);
+        font-weight:bold;
+    }
 
     #accounticon{
-        height:12%;
-        width:100%;
-        background-color:white;
+        height:20%;
+        width:100%;       
         color:black;
-        font-size:clamp(1vh,8vw,9vh);
-        position:absolute;
-        bottom:0;
+        font-size:clamp(1vh,6vw,8vh);
+        /* position:absolute; */
+        /* bottom:0; */
         display:flex;
         justify-content:space-around;
         align-items:center;
       
+    }
+    .namebox h2{      
+        font-size:clamp(1vh,9vw,10vh);
+        font-weight:bold;      
+        text-shadow:0 0 15px red, 0 0 50px red;
+        font-family:'Times New Roman', Times, serif;
+        margin-top:4vh;                  
     }
 }

@@ -1,7 +1,7 @@
 
 import '../Style/Navigation.css';
 
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 const Navigation= ()=>{
    
 
@@ -13,14 +13,20 @@ const Navigation= ()=>{
                 <h4>SHOES SHOP</h4>
               </div>
 
-              <ul>
-                <li><Link to="/" id="catlink">Home</Link></li>    
+              <ul className='navbar'>
+                <li><NavLink to="/" id="catlink"
+                    style={({isActive})=>{return{color:isActive ? 'red' :' '}}}
+                >Home</NavLink></li>    
 
-                <li><Link to="/Shoescategory" id="catlink">Category</Link></li>     
+                <li><NavLink to="/Shoescategory" id="catlink"
+                    style={({isActive})=>{return{color:isActive ? 'red' :' '}}}
+                >Category</NavLink></li>     
 
                 {/* <li href="#">Contact</li> */}
 
-                <li><Link to="/Account" id="catlink">Account</Link></li>
+                <li><NavLink to="/Account" id="catlink"
+                    style={({isActive})=>{return{color:isActive ? 'red' :' '}}}
+                >Account</NavLink></li>
               </ul>
               
             {/* <Link to="/Login" className='link-button'><button>Login</button></Link> */}
